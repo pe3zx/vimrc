@@ -1,23 +1,39 @@
 " ===========================================================
+" Load required dependencies
+" ===========================================================
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mattn/emmet-vim'
+
+call vundle#end()
+
+
+" ===========================================================
 " General configuration
 " ===========================================================
 
 " Hardcore mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 " Specify colorscheme here
 colorscheme torte
 
 " Enable syntax highlighting
 syntax on
-filetype on
 filetype plugin indent on
 set autoindent
 set smartindent
@@ -62,7 +78,7 @@ command WQ wq
 
 " Enable wildmenu for auto-completion
 set wildmenu
-set wildmode=list:longest,full
+set wildmode=full
 
 " Mute all sounds
 set noerrorbells
@@ -102,7 +118,6 @@ exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
 inoremap <C-c> <Esc>
 inoremap <C-f> <C-x><C-f>
 inoremap <C-l> <C-x><C-l>
-
 
 " ===========================================================
 " Filetype configuration
