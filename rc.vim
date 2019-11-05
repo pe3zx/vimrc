@@ -92,6 +92,8 @@ set ls=2
 
 " GVim configuration
 if has("gui_running")
+    set guifont=Hack:h10
+    colorscheme slate
 	set t_Co=256
 	set go-=m
 	set go-=T
