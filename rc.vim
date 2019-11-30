@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 
@@ -120,6 +121,14 @@ exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
 inoremap <C-c> <Esc>
 inoremap <C-f> <C-x><C-f>
 inoremap <C-l> <C-x><C-l>
+
+" ===========================================================
+" Plugins configuration
+" ===========================================================
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
 " ===========================================================
 " Filetype configuration
