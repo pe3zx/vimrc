@@ -13,6 +13,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'PProvost/vim-ps1'
+Plugin 's3rvac/vim-syntax-yara'
 
 call vundle#end()
 
