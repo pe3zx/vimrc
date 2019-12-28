@@ -158,3 +158,6 @@ augroup XML
     autocmd!
     autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
 augroup END
+
+" YARA
+autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
