@@ -161,3 +161,8 @@ augroup END
 
 " YARA
 autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
+
+" Markdown
+let g:vim_markdown_folding_level = 1
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
