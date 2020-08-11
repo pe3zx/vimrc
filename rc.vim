@@ -16,6 +16,7 @@ Plugin 'PProvost/vim-ps1'
 Plugin 's3rvac/vim-syntax-yara'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
