@@ -14,6 +14,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'PProvost/vim-ps1'
 Plugin 's3rvac/vim-syntax-yara'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
