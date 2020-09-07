@@ -17,6 +17,7 @@ Plugin 's3rvac/vim-syntax-yara'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-surround'
+Plugin 'SidOfc/mkdx'
 
 call vundle#end()
 
@@ -169,3 +170,5 @@ autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
+
+let g:mkdx#settings = { 'highlight': { 'enable': 1 }, 'enter': { 'shift': 1 }, 'links': { 'external': { 'enable': 1 } }, 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 }, 'fold': { 'enable': 1 } }
