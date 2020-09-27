@@ -1,41 +1,16 @@
 " ===========================================================
-" Load required dependencies
-" ===========================================================
-
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'mattn/emmet-vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'PProvost/vim-ps1'
-Plugin 'easymotion/vim-easymotion'
-Plugin 's3rvac/vim-syntax-yara'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'tpope/vim-surround'
-Plugin 'SidOfc/mkdx'
-
-call vundle#end()
-
-
-" ===========================================================
 " General configuration
 " ===========================================================
 
 " Hardcore mode
-" map <up> <nop>
-" map <down> <nop>
-" map <left> <nop>
-" map <right> <nop>
-" imap <up> <nop>
-" imap <down> <nop>
-" imap <left> <nop>
-" imap <right> <nop>
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 " Specify colorscheme here
 colorscheme torte
@@ -133,11 +108,9 @@ inoremap <C-l> <C-x><C-l>
 " Plugins configuration
 " ===========================================================
 
-" ctrlpvim/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+" let g:ctrlp_working_path_mode = 'ra'
 
 " ===========================================================
 " Filetype configuration
@@ -165,13 +138,3 @@ augroup XML
     autocmd!
     autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
 augroup END
-
-" YARA
-autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
-
-" Markdown
-let g:vim_markdown_folding_level = 1
-let g:vim_markdown_math = 1
-let g:vim_markdown_frontmatter = 1
-
-let g:mkdx#settings = { 'highlight': { 'enable': 1 }, 'enter': { 'shift': 1 }, 'links': { 'external': { 'enable': 1 } }, 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 }, 'fold': { 'enable': 1 } }
