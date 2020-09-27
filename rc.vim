@@ -13,6 +13,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'PProvost/vim-ps1'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()
 
@@ -127,9 +128,11 @@ inoremap <C-l> <C-x><C-l>
 " Plugins configuration
 " ===========================================================
 
+" ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
 
 " ===========================================================
 " Filetype configuration
