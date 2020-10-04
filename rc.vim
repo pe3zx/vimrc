@@ -22,6 +22,7 @@ Plugin 'SidOfc/mkdx'
 Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
