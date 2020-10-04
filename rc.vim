@@ -19,6 +19,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-surround'
 Plugin 'SidOfc/mkdx'
+Plugin 'mzlogin/vim-markdown-toc'
 
 call vundle#end()
 
