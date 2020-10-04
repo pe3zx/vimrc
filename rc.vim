@@ -20,6 +20,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-surround'
 Plugin 'SidOfc/mkdx'
 Plugin 'mzlogin/vim-markdown-toc'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 
@@ -134,11 +136,13 @@ inoremap <C-l> <C-x><C-l>
 " Plugins configuration
 " ===========================================================
 
-" ctrlpvim/ctrlp.vim'
+" ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
+" junegunn/fzf
+set rtp+=~/.vim/bundle/fzf.vim
 
 " ===========================================================
 " Filetype configuration
