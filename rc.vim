@@ -23,6 +23,7 @@ Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'chr4/nginx.vim'
 
 call vundle#end()
 
