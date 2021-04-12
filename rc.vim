@@ -25,6 +25,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'chr4/nginx.vim'
 
 call vundle#end()
 
