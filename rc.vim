@@ -23,6 +23,8 @@ Plugin 'mzlogin/vim-markdown-toc'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
@@ -42,7 +44,7 @@ call vundle#end()
 " imap <right> <nop>
 
 " Specify colorscheme here
-colorscheme torte
+colorscheme brogrammer
 
 " Enable syntax highlighting
 syntax on
@@ -143,7 +145,17 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
 " junegunn/fzf
-set rtp+=~/.vim/bundle/fzf.vim
+set rtp+=/usr/bin/fzf
+
+" vim-syntastic/syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ===========================================================
 " Filetype configuration
