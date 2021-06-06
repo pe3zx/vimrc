@@ -24,6 +24,11 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'chr4/nginx.vim'
+Plugin 'Anthirian/vim-aggressor'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'preservim/nerdtree'
+Plugin 'tomlion/vim-solidity'
+Plugin 'cespare/vim-toml'
 
 call vundle#end()
 
@@ -146,6 +151,18 @@ let g:ctrlp_working_path_mode = 'ra'
 " junegunn/fzf
 set rtp+=~/.vim/bundle/fzf.vim
 
+" vim-syntastic/syntastic
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers=['flake8']
+
 " ===========================================================
 " Filetype configuration
 " ===========================================================
@@ -195,5 +212,4 @@ autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
 let g:vim_markdown_folding_level = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
-
 let g:mkdx#settings = { 'highlight': { 'enable': 1 }, 'enter': { 'shift': 1 }, 'links': { 'external': { 'enable': 1 } }, 'toc': { 'text': 'Table of Contents', 'update_on_write': 1 }, 'fold': { 'enable': 1 } }
