@@ -29,6 +29,9 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'preservim/nerdtree'
 Plugin 'tomlion/vim-solidity'
 Plugin 'cespare/vim-toml'
+Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'chr4/nginx.vim'
 
 call vundle#end()
 
@@ -48,7 +51,7 @@ call vundle#end()
 " imap <right> <nop>
 
 " Specify colorscheme here
-colorscheme torte
+colorscheme brogrammer
 
 " Enable syntax highlighting
 syntax on
@@ -149,7 +152,17 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
 " junegunn/fzf
-set rtp+=~/.vim/bundle/fzf.vim
+set rtp+=/usr/bin/fzf
+
+" vim-syntastic/syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " vim-syntastic/syntastic
 
