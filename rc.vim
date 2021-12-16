@@ -2,37 +2,29 @@
 " Load required dependencies
 " ===========================================================
 
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'mattn/emmet-vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'PProvost/vim-ps1'
-Plugin 'easymotion/vim-easymotion'
-Plugin 's3rvac/vim-syntax-yara'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'tpope/vim-surround'
-Plugin 'SidOfc/mkdx'
-Plugin 'mzlogin/vim-markdown-toc'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'Anthirian/vim-aggressor'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'preservim/nerdtree'
-Plugin 'tomlion/vim-solidity'
-Plugin 'cespare/vim-toml'
-Plugin 'marciomazza/vim-brogrammer-theme'
-Plugin 'chr4/nginx.vim'
+Plug 'VundleVim/Vundle.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'mattn/emmet-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'PProvost/vim-ps1'
+Plug 'easymotion/vim-easymotion'
+Plug 's3rvac/vim-syntax-yara'
+Plug 'airblade/vim-gitgutter'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-surround'
+Plug 'SidOfc/mkdx'
+Plug 'mzlogin/vim-markdown-toc'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'preservim/nerdtree'
+Plug 'tomlion/vim-solidity'
+Plug 'cespare/vim-toml'
+Plug 'marciomazza/vim-brogrammer-theme'
+Plug 'chr4/nginx.vim'
 
-call vundle#end()
-
+call plug#end()
 
 " ===========================================================
 " General configuration
@@ -111,7 +103,7 @@ set ls=2
 
 " GVim configuration
 if has("gui_running")
-    set guifont=Hack:h10
+    set guifont=consolas:h10
     colorscheme slate
 	set t_Co=256
 	set go-=m
@@ -148,9 +140,6 @@ inoremap <C-l> <C-x><C-l>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-
-" junegunn/fzf
-set rtp+=/usr/bin/fzf
 
 " vim-syntastic/syntastic
 set statusline+=%#warningmsg#
