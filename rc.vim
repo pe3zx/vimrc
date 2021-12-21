@@ -4,7 +4,6 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'VundleVim/Vundle.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'mattn/emmet-vim'
 Plug 'ctrlpvim/ctrlp.vim'
